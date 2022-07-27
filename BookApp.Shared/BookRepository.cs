@@ -53,7 +53,7 @@ namespace BookApp.Shared
         }
         #endregion
 
-        #region //[6][3] 상세: GetByIdAsync
+        #region [6][3] 상세: GetByIdAsync
         //[6][3] 상세
         public async Task<Book> GetByIdAsync(int id)
         {
@@ -65,7 +65,7 @@ namespace BookApp.Shared
         }
         #endregion
 
-        #region //[6][4] 수정: UpdateAsync
+        #region [6][4] 수정: UpdateAsync
         //[6][4] 수정
         public async Task<bool> UpdateAsync(Book model)
         {
@@ -83,7 +83,7 @@ namespace BookApp.Shared
         }
         #endregion
 
-        #region //[6][5] 삭제: DeleteAsync
+        #region [6][5] 삭제: DeleteAsync
         //[6][5] 삭제
         public async Task<bool> DeleteAsync(int id)
         {

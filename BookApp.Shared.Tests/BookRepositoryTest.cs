@@ -37,7 +37,7 @@ namespace BookApp.Shared.Tests
 
                 //[A] Arrange: 1번 데이터를 아래 항목으로 저장합니다. 
                 var repository = new BookRepository(context, factory);
-                var model = new Book { Title = "C# 교과서", Description = "C# 기초를 다룹니다." };
+                var model = new Book { Title = "Book", Description = "test" };
 
                 //[B] Act: AddAsync() 메서드 테스트
                 await repository.AddAsync(model); // Id: 1
@@ -45,11 +45,11 @@ namespace BookApp.Shared.Tests
             //[1][2] DbContext 클래스를 통해서 개수 및 레코드 확인 
             using (var context = new BookAppDbContext(options))
             {
-                //[C] Assert: 현재 총 데이터 개수가 1개인 것과, 1번 데이터의 Title이 "C# 교과서"인지 확인합니다. 
+                //[C] Assert: 현재 총 데이터 개수가 1개인 것과, 1번 데이터의 Title이 "Book"인지 확인합니다. 
                 Assert.AreEqual(1, await context.Books.CountAsync());
 
                 var model = await context.Books.Where(n => n.Id == 1).SingleOrDefaultAsync();
-                Assert.AreEqual("C# 교과서", model.Title);
+                Assert.AreEqual("Book", model.Title);
             }
             #endregion
 

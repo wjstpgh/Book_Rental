@@ -27,9 +27,9 @@ namespace BookApp.Shared
         public string Title { get; set; }
 
         /// <summary>
-        /// 책 설명
+        /// 대여자
         /// </summary>
-        [Display(Name = "책 설명")]
+        [Display(Name = "대여자")]
         public string Description { get; set; }
 
         /// <summary>
