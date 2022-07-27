@@ -58,14 +58,35 @@ API실행 후 React서버 실행
 
 ***
 
+### API 서버 - BookApp.Apis
+
+* 서버가 열릴때의 포트번호와 Default Route경로 설정
+
+![image](https://user-images.githubusercontent.com/26988563/181311480-454326a6-6db9-46af-8c6c-fae9c0934972.png)
+
+* 테스트를 위한 더미 데이터 입력
+
+![image](https://user-images.githubusercontent.com/26988563/181312466-dc47c88f-d365-4eb4-88e3-956ea3e66291.png)
+
+* API 서버 라우팅 경로 '/api/Books'의 JSON 데이터 확인
+
+![image](https://user-images.githubusercontent.com/26988563/181312780-6ba79e3e-16f3-4734-8a69-db1a46248110.png)
+
+
+
+***
+
 ### CURD 기능 테스트 클래스 - BookApp.Shared.Tests
 
-* BookRepository.cs
+* BookRepository.cs의 메서드 기능 테스트 결과
 
 ![image](https://user-images.githubusercontent.com/26988563/181309697-bc2ebf4c-b0d7-49b6-b46f-5db5c581be25.png)
 
-* 데이터 추가 함수인 
+* 데이터 추가 함수인 AddAsync()의 기능 테스트 코드
 
-![image](https://user-images.githubusercontent.com/26988563/181310274-6c749964-0fc7-4a35-ba12-7aef9f76e1a2.png)
+![image](https://user-images.githubusercontent.com/26988563/181310453-8189faae-e0b1-49c1-9043-36114753df3f.png)
+
+0 : 개체 생성 코드, 1~5 : BookRepository.cs의 6번, 필터링 메서드이외의 5개 기능 테스트 코드
+
 
 
