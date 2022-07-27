@@ -24,7 +24,6 @@ namespace BookApp.Shared
         public BookAppDbContext(DbContextOptions<BookAppDbContext> options)
             : base(options)
         {
-            // 공식과 같은 코드
             // ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
         }
 
