@@ -1,6 +1,39 @@
 # Book_Rental
 
 ASP.NET Core와 React를 사용하여 책 대여 현황을 DataBase에 저장하고 Web Page상에서 CRUD를 실행하여 편집하여 현황을 관리하는 프로젝트
+프로젝트는 Visual Studio 환경에서 실행했습니다.
+
+### 기능 소개
+
+![a](https://user-images.githubusercontent.com/26988563/181515708-ddc233e4-bf53-4f57-9e1f-a66b1ed31c00.png)
+
+메뉴바의 Rental List 탭으로 이동
+
+* 책 대여시 리스트 추가 기능
+
+![add1](https://user-images.githubusercontent.com/26988563/181515949-4a478e83-695f-442c-a1ad-b358d84be961.png)
+
+![add2](https://user-images.githubusercontent.com/26988563/181515966-44dcf625-bdb3-4ba0-826f-6bb5023adc62.png)
+
+![add3](https://user-images.githubusercontent.com/26988563/181515986-d552f387-4168-4649-850b-6b26118c909a.png)
+
+* 책 반납시 리스트 삭제 기능
+
+![del1](https://user-images.githubusercontent.com/26988563/181516085-45cc3a9b-7ece-46a2-a8d2-561dcd108d63.png)
+
+![del2](https://user-images.githubusercontent.com/26988563/181516102-b7aadf9a-60d5-4d92-a016-1ea590ff7b9b.png)
+
+![del3](https://user-images.githubusercontent.com/26988563/181516135-2e7c0dd8-d68c-4683-8888-523aef21e714.png)
+
+* 리스트 내용 수정 기능
+
+![modi1](https://user-images.githubusercontent.com/26988563/181516196-0ec2c0ea-00ef-4a80-8890-d27ed334edd3.png)
+
+![modi2](https://user-images.githubusercontent.com/26988563/181516205-1276d3fa-5651-4bef-a6c6-a12a998402cf.png)
+
+![modi3](https://user-images.githubusercontent.com/26988563/181516217-74e94ebd-94cf-4cbe-b9cf-3cbf1ad22cb9.png)
+
+위의 기능들을 이용해 대여 리스트를 편집하여 DB에 저장하여 관리합니다.
 
 ***
 
@@ -86,7 +119,23 @@ API실행 후 React서버 실행
 
 ***
 
-### 클라이언트 서버 - 
+### 클라이언트 서버 - BookApp.React
+
+* 대여 리스트를 출력하고 다른 기능들을 버튼에 이벤트 등록하여 호출하는 페이지 - BooksIndex.jsx
+
+![image](https://user-images.githubusercontent.com/26988563/181516586-54f8b8fa-d88f-4d15-814d-9121a981578f.png)
+
+* 대여 리스트 수정 페이지 - BooksEdit.jsx
+
+![image](https://user-images.githubusercontent.com/26988563/181516951-79dad347-f486-45b5-824e-475b5acd74fc.png)
+
+* 대여 리스트 삭제 페이지 - BooksDelete.jsx
+
+![image](https://user-images.githubusercontent.com/26988563/181517210-fd73cc69-d2a3-4030-ae84-6b8fac0ea21b.png)
+
+* 대여 리스트 생성 페이지 - BooksCreate.jsx
+
+![image](https://user-images.githubusercontent.com/26988563/181517327-5756b271-4b9d-4398-a1b6-fa8d13cc13e7.png)
 
 ***
 
