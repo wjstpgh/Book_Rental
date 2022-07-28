@@ -72,7 +72,21 @@ API실행 후 React서버 실행
 
 ![image](https://user-images.githubusercontent.com/26988563/181312780-6ba79e3e-16f3-4734-8a69-db1a46248110.png)
 
+* React 서버에서 호출하는 메서드에 따라 DB데이터 조작하는 부분 - BooksController.cs
 
+![image](https://user-images.githubusercontent.com/26988563/181504628-35f240cc-b851-4eff-b9d2-23035bccf1bb.png)
+
+* API 서버를 열어주는 부분 - Startup.cs
+
+![image](https://user-images.githubusercontent.com/26988563/181505063-dee9b8aa-0c3a-482f-bb57-bc441b7a210b.png)
+
+* API서버 메인부로 startup을 실행 - Program.cs
+
+![image](https://user-images.githubusercontent.com/26988563/181505353-75cdcc85-1f00-4a6f-9aa3-dae14de2fe2b.png)
+
+***
+
+### 클라이언트 서버 - 
 
 ***
 
@@ -87,6 +101,5 @@ API실행 후 React서버 실행
 ![image](https://user-images.githubusercontent.com/26988563/181310453-8189faae-e0b1-49c1-9043-36114753df3f.png)
 
 0 : 개체 생성 코드, 1~5 : BookRepository.cs의 6번, 필터링 메서드이외의 5개 기능 테스트 코드
-
 
 
