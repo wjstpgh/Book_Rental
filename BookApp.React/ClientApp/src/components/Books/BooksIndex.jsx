@@ -28,11 +28,11 @@ export class BooksIndex extends Component {
             <table className='table table-striped' aria-labelledby="tabelLabel">
                 <thead>
                     <tr>
-                        <th>Id</th>
-                        <th>Title</th>
-                        <th>Description</th>
-                        <th>Created</th>
-                        <th>Action, Admin</th>
+                        <th>대여번호</th>
+                        <th>책 제목</th>
+                        <th>대여자</th>
+                        <th>대여일</th>
+                        <th>편집, 삭제</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -43,9 +43,9 @@ export class BooksIndex extends Component {
                             <td>{book.description}</td>
                             <td>{book.created ? new Date(book.created).toLocaleDateString() : "-" }</td>
                             <td className="text-nowrap">
-                                <button className="btn btn-sm btn-primary" onClick={() => this.editBy(book.id)}>Edit</button>
+                                <button className="btn btn-sm btn-primary" onClick={() => this.editBy(book.id)}>수정</button>
                                 &nbsp;
-                                <button className="btn btn-sm btn-danger" onClick={() => this.deleteBy(book.id)}>Delete</button>
+                                <button className="btn btn-sm btn-danger" onClick={() => this.deleteBy(book.id)}>반납완료</button>
                             </td>
                         </tr>
                     )}
@@ -74,13 +74,12 @@ export class BooksIndex extends Component {
 
     render() {
         let contents = this.state.loading
-            ? <p><em>Loading...</em></p>
+            ? <p><em>로딩 중...</em></p>
             : this.renderBooksTable(this.state.books);
 
         return (
             <div>
-                <h1>사용자 리스트<button onClick={this.goCreatePage} className="btn btn-primary"><span className="fa fa-plus">+</span></button></h1>
-                <h2 style={{ fontStyle: "italic" }}>등록된 사용자들</h2> 
+                <h1>책 대여 리스트  <button onClick={this.goCreatePage} className="btn btn-primary">+</button></h1>
                 {contents}
             </div>
         );
